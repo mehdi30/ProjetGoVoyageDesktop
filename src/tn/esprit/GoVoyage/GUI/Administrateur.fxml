@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="675.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.AdministrateurController">
+   <children>
+      <ImageView fitHeight="484.0" fitWidth="675.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/image.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#d7cfcf" layoutX="252.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Working Space" wrappingWidth="224.626953125">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="65.0" fitWidth="55.0" layoutX="162.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/admin-with-cogwheels.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="135.0" layoutX="120.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/gears-configuration-tool.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="107.0" layoutX="475.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/percentage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="107.0" layoutX="120.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/takeoff-the-plane.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="107.0" layoutX="288.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/map-symbol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="107.0" layoutX="477.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/hotel-with-three-floors.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="107.0" layoutX="285.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/mail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="73.0" layoutX="577.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/power.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="114.0" layoutY="179.0" mnemonicParsing="false" onAction="#clients" opacity="0.0" prefHeight="73.0" prefWidth="119.0" text="clients" />
+      <Button layoutX="120.0" layoutY="320.0" mnemonicParsing="false" onAction="#vols" opacity="0.0" prefHeight="65.0" prefWidth="107.0" text="vols" />
+      <Button layoutX="285.0" layoutY="168.0" mnemonicParsing="false" onAction="#reclamations" opacity="0.0" prefHeight="73.0" prefWidth="113.0" text="reclamations" />
+      <Button layoutX="284.0" layoutY="311.0" mnemonicParsing="false" onAction="#guides" opacity="0.0" prefHeight="82.0" prefWidth="107.0" text="guides" />
+      <Button layoutX="485.0" layoutY="169.0" mnemonicParsing="false" onAction="#offres" opacity="0.0" prefHeight="93.0" prefWidth="107.0" text="offres" />
+      <Button layoutX="494.0" layoutY="299.0" mnemonicParsing="false" onAction="#hotels" opacity="0.0" prefHeight="82.0" prefWidth="73.0" text="hotels" />
+      <Button layoutX="582.0" layoutY="39.0" mnemonicParsing="false" onAction="#out" opacity="0.0" text="Sign Out" />
+      <Text fx:id="iduser" fill="#d0c2c2" layoutX="554.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

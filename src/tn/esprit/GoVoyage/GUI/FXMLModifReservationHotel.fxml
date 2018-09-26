@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.FXMLModifReservationHotelController">
+   <children>
+      <ImageView fx:id="img_res_hotel" fitHeight="772.0" fitWidth="1195.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/background.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_res_modif1111" layoutX="114.0" layoutY="316.0" prefHeight="29.0" prefWidth="290.0" text="Nombre d'adultes : " textFill="#d77171" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="115.0" layoutY="374.0" text="Nombres d'enfants: " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="input_ref_ajout_adulte" layoutX="366.0" layoutY="312.0" prefHeight="38.0" prefWidth="185.0" />
+      <ComboBox fx:id="input_ref_ajout_enfant" layoutX="368.0" layoutY="363.0" prefHeight="39.0" prefWidth="183.0" />
+      <Label fx:id="label_modifvol" layoutX="224.0" layoutY="113.0" prefHeight="122.0" prefWidth="550.0" text="     Modifier Ma Reservation d'Hotel pour : ">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_ok" layoutX="835.0" layoutY="617.0" mnemonicParsing="false" onAction="#on_click_button_ok" prefHeight="51.0" prefWidth="202.0" text="OK">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="carac_vol" layoutX="291.0" layoutY="221.0" prefHeight="29.0" prefWidth="335.0" text="carac vol " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="98.0" layoutY="611.0" prefHeight="35.0" prefWidth="126.0" text="Prix total : " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="blasset_prix_total" layoutX="219.0" layoutY="613.0" prefHeight="32.0" prefWidth="185.0" text="912.2" textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <JFXDatePicker fx:id="calendar_arriv" layoutX="762.0" layoutY="459.0" />
+      <JFXDatePicker fx:id="calendar_sortie" layoutX="762.0" layoutY="507.0" />
+      <Label fx:id="label_date_arr" layoutX="616.0" layoutY="458.0" prefHeight="32.0" prefWidth="154.0" text="Date d'arrivée :" textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="label_date_sortie" layoutX="616.0" layoutY="522.0" text="Date de sortie: " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="the_ok_butt" layoutX="996.0" layoutY="490.0" mnemonicParsing="false" onAction="#on_click_ok_butt" text="OK" />
+      <ComboBox fx:id="combo_chbre_single" layoutX="897.0" layoutY="308.0" prefHeight="37.0" prefWidth="111.0" />
+      <ComboBox fx:id="combo_chbre_double" layoutX="900.0" layoutY="368.0" prefHeight="38.0" prefWidth="111.0" />
+      <Label fx:id="label_chbre_single" layoutX="628.0" layoutY="320.0" text="Nombre de chambres Single : " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="label_chbre_double" layoutX="626.0" layoutY="380.0" text="Nombre de chambres Double :" textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="calcul_butt" layoutX="404.0" layoutY="613.0" mnemonicParsing="false" onAction="#on_click_calcul_butt" text="Calculer" />
+      <Label fx:id="label_res_modif11111" layoutX="459.0" layoutY="669.0" prefHeight="29.0" prefWidth="118.0" text="Date de l'ajout:" textFill="#d77171" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nbr_nuit_label" layoutX="114.0" layoutY="430.0" text="Nombre de nuits: " textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="312.0" layoutY="615.0" prefHeight="29.0" prefWidth="39.0" text="DT" textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="input_nbr_nuit" layoutX="370.0" layoutY="423.0" prefHeight="35.0" prefWidth="179.0" text=".." textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="label_datejour1" layoutX="588.0" layoutY="663.0" prefHeight="36.0" prefWidth="205.0" text="..1" textFill="#d77171">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

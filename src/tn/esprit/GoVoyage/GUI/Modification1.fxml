@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.Modification1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <children>
+            <ImageView fx:id="image" fitHeight="549.0" fitWidth="778.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/image.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="126.0" text="Entrer Reference :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ref_Asupp" layoutX="324.0" layoutY="128.0" prefHeight="29.0" prefWidth="319.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_modif1" layoutX="314.0" layoutY="310.0" mnemonicParsing="false" onAction="#Modifier_Heb" text="Modifier">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Button>
+         </children>
+         <stylesheets>
+            <URL value="@../../../PIdev/src/GUI/supression.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.VolStatsController">
+   <children>
+      <Pane prefHeight="663.0" prefWidth="1000.0">
+         <children>
+            <ImageView fx:id="imgv" fitHeight="663.0" fitWidth="1000.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Img/background1.png" />
+               </image>
+            </ImageView>
+            <BarChart fx:id="barchart" layoutX="124.0" layoutY="67.0" prefHeight="340.0" prefWidth="774.0" style="-fx-background-color: transparent;">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+            <Label fx:id="avg" layoutX="268.0" layoutY="539.0" prefHeight="25.0" prefWidth="93.0" textFill="#f20d0d">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Fermerr" layoutX="763.0" layoutY="527.0" mnemonicParsing="false" onAction="#FermerStats" prefHeight="37.0" prefWidth="121.0" text="Fermer " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

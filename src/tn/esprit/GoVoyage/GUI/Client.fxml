@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.ClientController">
+   <children>
+      <TabPane prefHeight="659.0" prefWidth="735.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Hotels">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="39.0" layoutY="28.0" prefHeight="279.0" prefWidth="658.0" style="-fx-background-color: #191970;">
+                           <children>
+                              <Button layoutX="163.0" layoutY="41.0" mnemonicParsing="false" onAction="#ActionRecherche" prefHeight="39.0" prefWidth="322.0" text=" Rechercher Votre destination" textFill="#0d0303">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Mdestinations" layoutX="162.0" layoutY="103.0" mnemonicParsing="false" onAction="#MDestinationAction" prefHeight="44.0" prefWidth="325.0" text="Nos Meilleures destinations">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="249.0" layoutY="166.0" mnemonicParsing="false" onAction="#accHAction" prefHeight="44.0" prefWidth="111.0" text="Accueil" />
+                           </children>
+                        </AnchorPane>
+                        <ImageView fx:id="hotel1" fitHeight="150.0" fitWidth="291.0" layoutX="249.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/outside-swimming-pool.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="hotel2" fitHeight="147.0" fitWidth="200.0" layoutX="508.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/piscine-pavillon-el-bosten.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="hotel3" fitHeight="145.0" fitWidth="189.0" layoutX="39.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/hotel-club-president.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="MaisonsHotes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="25.0" layoutY="101.0" prefHeight="259.0" prefWidth="686.0" style="-fx-background-color: #191970;">
+                           <children>
+                              <Button layoutX="192.0" layoutY="41.0" mnemonicParsing="false" onAction="#Action_HotesRecheche" prefHeight="44.0" prefWidth="263.0" text="Rechercher">
+                                 <font>
+                                    <Font name="System Italic" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="idee" layoutX="190.0" layoutY="113.0" mnemonicParsing="false" onAction="#ideeAction" prefHeight="47.0" prefWidth="267.0" text="Voulez vous avoir une idée ?">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="262.0" layoutY="175.0" mnemonicParsing="false" onAction="#accMAction" prefHeight="52.0" prefWidth="101.0" text="Accueil" />
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="81.0" layoutY="14.0" prefHeight="98.0" prefWidth="573.0" text="Réservez des logements uniques et vivez là-bas comme des locaux.">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="hote1" fitHeight="147.0" fitWidth="199.0" layoutX="122.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/23021957_1834138146626159_1172314524_n.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="hote2" fitHeight="150.0" fitWidth="211.0" layoutX="441.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/26916729.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

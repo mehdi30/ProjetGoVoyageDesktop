@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="reservation_card" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.FXMLController">
+  <children>
+      <ImageView fx:id="img_carte_res" fitHeight="789.0" fitWidth="1348.0" layoutX="-88.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/background1.png" />
+         </image>
+      </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="DEFAULT" fill="DODGERBLUE" height="89.0" layoutX="397.0" layoutY="52.0" opacity="0.87" stroke="BLACK" strokeMiterLimit="10.0" strokeType="INSIDE" width="470.0" />
+    <Label fx:id="votre_carte_label" graphicTextGap="4.0" layoutX="419.0" layoutY="69.0" opacity="1.0" pickOnBounds="false" prefHeight="56.0" prefWidth="426.0" text="    Ma carte de réservation" textAlignment="CENTER" textFill="#7a0099" textOverrun="LEADING_ELLIPSIS">
+      <font>
+        <Font name="Centaur" size="40.0" />
+      </font>
+    </Label>
+    <TabPane layoutX="2.0" layoutY="161.0" prefHeight="556.0" prefWidth="1277.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+            <Tab fx:id="ajou_res_tab" onSelectionChanged="#click_res_ajout" text="Ajouter une reservation">
+               <content>
+                  <AnchorPane id="Content" fx:id="tts111" minHeight="0.0" minWidth="0.0" prefHeight="463.0" prefWidth="1216.0">
+                     <children>
+                        <TextField fx:id="input_ref_ajout_ref_client" layoutX="404.0" layoutY="120.0" />
+                        <Label fx:id="label_res_modif1" layoutX="84.0" layoutY="117.0" prefHeight="29.0" prefWidth="290.0" text="Votre reference (client): " textFill="#976a6a" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Button fx:id="ajouter_butt" layoutX="1105.0" layoutY="468.0" mnemonicParsing="false" onAction="#on_clicked_ajout_butt" prefHeight="30.0" prefWidth="118.0" text="Ajouter" wrapText="false">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="label_res_modif11" layoutX="84.0" layoutY="173.0" prefHeight="29.0" prefWidth="290.0" text="Type de la reservation à ajouter:" textFill="#976a6a" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_res_modif111" layoutX="84.0" layoutY="231.0" prefHeight="29.0" prefWidth="290.0" text="Réference du type souhaité:" textFill="#976a6a" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_res_modif1111" layoutX="94.0" layoutY="296.0" prefHeight="29.0" prefWidth="290.0" text="Nombre d'adultes : " textFill="#976a6a" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_res_modif11111" layoutX="776.0" layoutY="445.0" prefHeight="29.0" prefWidth="118.0" text="Date de l'ajout:" textFill="#976a6a" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_date_du_jour" layoutX="768.0" layoutY="476.0" prefHeight="29.0" prefWidth="234.0" text=".." textFill="#321414" wrapText="true" />
+                        <ComboBox fx:id="type_combo" layoutX="402.0" layoutY="165.0" onAction="#on_select_ajout_combo" prefHeight="38.0" prefWidth="186.0" />
+                        <Label layoutX="95.0" layoutY="354.0" text="Nombres d'enfants: " textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="113.0" layoutY="442.0" prefHeight="35.0" prefWidth="126.0" text="Prix total : " textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="nbr_nuit_label" layoutX="95.0" layoutY="397.0" text="Nombre de nuits: " textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="blasset_prix_total" layoutX="404.0" layoutY="438.0" prefHeight="32.0" prefWidth="185.0" text="0.0" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label layoutX="529.0" layoutY="440.0" prefHeight="29.0" prefWidth="39.0" text="DT" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <ComboBox fx:id="combo_ref_type" layoutX="404.0" layoutY="230.0" onAction="#on_click_" prefHeight="36.0" prefWidth="184.0" />
+                        <Label fx:id="label_warning_type" layoutX="625.0" layoutY="174.0" prefHeight="15.0" prefWidth="187.0" text="SVP Faites un choix !!" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <JFXDatePicker fx:id="calendar_arriv" layoutX="930.0" layoutY="334.0" />
+                        <JFXDatePicker fx:id="calendar_sortie" layoutX="930.0" layoutY="382.0" />
+                        <Label fx:id="label_date_arr" layoutX="784.0" layoutY="333.0" prefHeight="32.0" prefWidth="154.0" text="Date d'arrivée :" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_date_sortie" layoutX="784.0" layoutY="397.0" text="Date de sortie: " textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Button fx:id="the_ok_butt" layoutX="1164.0" layoutY="365.0" mnemonicParsing="false" onAction="#on_click_ok_butt" text="OK" />
+                        <ComboBox fx:id="combo_chbre_single" layoutX="1081.0" layoutY="113.0" prefHeight="37.0" prefWidth="111.0" />
+                        <ComboBox fx:id="combo_chbre_double" layoutX="1084.0" layoutY="173.0" prefHeight="38.0" prefWidth="111.0" />
+                        <Label fx:id="label_chbre_single" layoutX="812.0" layoutY="125.0" text="Nombre de chambres Single : " textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label_chbre_double" layoutX="810.0" layoutY="185.0" text="Nombre de chambres Double :" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <ComboBox fx:id="input_ref_ajout_adulte" layoutX="402.0" layoutY="288.0" prefHeight="38.0" prefWidth="185.0" />
+                        <ComboBox fx:id="input_ref_ajout_enfant" layoutX="404.0" layoutY="339.0" prefHeight="39.0" prefWidth="183.0" />
+                        <Label fx:id="input_nbr_nuit" layoutX="405.0" layoutY="393.0" prefHeight="35.0" prefWidth="179.0" text=".." textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Button fx:id="calcul_butt" layoutX="606.0" layoutY="439.0" mnemonicParsing="false" onAction="#on_click_calcul_butt" text="Calculer" />
+                        <Label fx:id="label_datejour1" layoutX="905.0" layoutY="439.0" prefHeight="36.0" prefWidth="205.0" text="..1" textFill="#976a6a">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Label>
+                        <Label fx:id="Label2" layoutX="605.0" layoutY="230.0" prefHeight="35.0" prefWidth="192.0" />
+                        <Label fx:id="Label3" layoutX="614.0" layoutY="286.0" prefHeight="42.0" prefWidth="202.0" />
+                        <Label fx:id="Label4" layoutX="606.0" layoutY="343.0" prefHeight="38.0" prefWidth="187.0" />
+                        <Label fx:id="Label5" layoutX="797.0" layoutY="244.0" prefHeight="45.0" prefWidth="307.0" />
+                        <Label fx:id="Label6" layoutX="851.0" layoutY="44.0" prefHeight="41.0" prefWidth="304.0" />
+                        <Button fx:id="cancel" layoutX="957.0" layoutY="468.0" mnemonicParsing="false" onAction="#cancelClick" prefHeight="45.0" prefWidth="114.0" text="Cancel">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        <Tab fx:id="hotels_tab" onSelectionChanged="#click_hotel" text="Mes Réservations ">
+          <content>
+            <AnchorPane id="Content" fx:id="reserv_hotel" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="treeview1" layoutX="20.0" layoutY="63.0" prefHeight="375.0" prefWidth="1238.0" />
+                        <Button fx:id="Supprimer_butt" layoutX="677.0" layoutY="450.0" mnemonicParsing="false" onAction="#on_clicked_supp_butt" prefHeight="38.0" prefWidth="138.0" text="Supprimer" wrapText="false">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="modifier_butt" layoutX="855.0" layoutY="451.0" mnemonicParsing="false" onAction="#on_clicked_modif_butt" prefHeight="43.0" prefWidth="131.0" text="modifier" wrapText="false">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="input_ref_supp" layoutX="431.0" layoutY="460.0" prefHeight="35.0" prefWidth="199.0" />
+                     </children></AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+      <JFXButton fx:id="acceuill" layoutX="505.0" onAction="#acceuil" prefHeight="65.0" prefWidth="185.0" text="Acceuil" textFill="#0d0000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+  </children>
+</AnchorPane>

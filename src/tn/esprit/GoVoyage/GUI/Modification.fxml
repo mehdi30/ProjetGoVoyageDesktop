@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.ModificationController">
+    <stylesheets>
+        <URL value="@modification.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="3.0" minHeight="0.0" minWidth="0.0" prefHeight="582.0" prefWidth="793.0">
+         <children>
+            <Label layoutX="41.0" layoutY="96.0" text="Adresse :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="131.0" text="AdresseMail">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="171.0" text="Type :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="203.0" text="NumTelephone :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_nbe" layoutX="41.0" layoutY="244.0" text="NbreEtoile :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_ps" layoutX="44.0" layoutY="279.0" text="PrixSingle :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_pd" layoutX="41.0" layoutY="321.0" text="PrixDouble :">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_pe" layoutX="43.0" layoutY="371.0" text="PrixEnfant :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_pn" layoutX="41.0" layoutY="414.0" prefHeight="31.0" prefWidth="112.0" text="PrixNuit :">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="56.0" text="Nom :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_adresse" layoutX="191.0" layoutY="99.0" prefHeight="25.0" prefWidth="239.0" />
+            <TextField fx:id="txt_nom" layoutX="191.0" layoutY="59.0" prefHeight="25.0" prefWidth="240.0" />
+            <TextField fx:id="txt_numTel" layoutX="213.0" layoutY="206.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="txt_description" layoutX="190.0" layoutY="134.0" prefHeight="25.0" prefWidth="240.0" />
+            <TextField fx:id="txt_pe" layoutX="187.0" layoutY="373.0" prefHeight="25.0" prefWidth="246.0" />
+            <TextField fx:id="txt_pd" layoutX="189.0" layoutY="324.0" prefHeight="25.0" prefWidth="244.0" />
+            <TextField fx:id="txt_ps" layoutX="188.0" layoutY="281.0" prefHeight="25.0" prefWidth="246.0" />
+            <TextField fx:id="txt_nbE" layoutX="188.0" layoutY="246.0" prefHeight="25.0" prefWidth="245.0" />
+            <TextField fx:id="txt_pn" layoutX="188.0" layoutY="417.0" prefHeight="25.0" prefWidth="245.0" />
+            <Button fx:id="btn_modificationS" layoutX="521.0" layoutY="420.0" mnemonicParsing="false" onAction="#HandleButtonModifS" prefHeight="51.0" prefWidth="211.0" text=" Modifier Hotel" textFill="#d00e04">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboModif" layoutX="186.0" layoutY="174.0" onAction="#comboModifAction" prefHeight="25.0" prefWidth="248.0" promptText="choisir " />
+            <Button fx:id="HotesModif" layoutX="521.0" layoutY="494.0" mnemonicParsing="false" onAction="#HotesModifAction" prefHeight="51.0" prefWidth="211.0" text="Modifier Hotes" textFill="#dd150a">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="retourner" layoutX="43.0" layoutY="499.0" mnemonicParsing="false" onAction="#retournerAction" prefHeight="42.0" prefWidth="103.0" text="retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.InscriptionxmlController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="441.0" prefWidth="706.0" style="-fx-background-color: #2D3447;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez remplir les informations suivantes :">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="nom" layoutX="101.0" layoutY="53.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Nom ex : Khouloud">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="prenom" layoutX="101.0" layoutY="95.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Prénom ">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="email" layoutX="102.0" layoutY="145.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Email">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="cin" layoutX="455.0" layoutY="84.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="CIN">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="tel" layoutX="455.0" layoutY="134.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Numéro téléphone">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <ComboBox fx:id="nationalite" layoutX="102.0" layoutY="240.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Nationalité">
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+            <ComboBox fx:id="sexe" layoutX="102.0" layoutY="192.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Quel est votre Sexe ?">
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+            <DatePicker fx:id="date" layoutX="102.0" layoutY="294.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Date de Naissance">
+               <effect>
+                  <Blend />
+               </effect></DatePicker>
+            <TextField fx:id="username1" layoutX="455.0" layoutY="192.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Username ">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="mdp1" layoutX="455.0" layoutY="243.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Mot de passe">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <ComboBox fx:id="choix" layoutX="103.0" layoutY="386.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Avez-vous une propriété ?">
+               <effect>
+                  <Blend />
+               </effect></ComboBox>
+            <Button fx:id="inscription" layoutX="429.0" layoutY="325.0" mnemonicParsing="false" onAction="#inscription" opacity="0.3" prefHeight="32.0" prefWidth="108.0" text="Confirmer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <TextField fx:id="nomprop1" layoutX="328.0" layoutY="386.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Nom de la propriété">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <TextField fx:id="passport" layoutX="103.0" layoutY="341.0" opacity="0.3" prefHeight="29.0" prefWidth="169.0" promptText="Numéro Passeport">
+               <effect>
+                  <Blend />
+               </effect></TextField>
+            <Button layoutX="571.0" layoutY="324.0" mnemonicParsing="false" onAction="#enleve" opacity="0.3" prefHeight="32.0" prefWidth="108.0" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="38.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/users.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="63.0" layoutX="38.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/mail-black-envelope-symbol.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="397.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/avatar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="63.0" layoutX="26.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/avatar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="38.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/calendar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="48.0" layoutX="38.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="397.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/id-card.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="44.0" layoutX="397.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/locked.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="47.0" layoutX="38.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/map-location.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="32.0" layoutX="397.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/smartphone.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="624.0" layoutY="18.0" mnemonicParsing="false" onAction="#retour" opacity="0.3" text="Retour">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="584.0" layoutY="17.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/keyboard-right-arrow-button.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

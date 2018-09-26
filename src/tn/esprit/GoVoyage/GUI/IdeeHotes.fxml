@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="658.0" style="-fx-background-color: #EEE8AA;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.IdeeHotesController">
+    <stylesheets>
+        <URL value="@ideehotes.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/93302118.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/23874137%20(1)_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="193.0" layoutX="62.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/91659900.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="104.0" prefHeight="17.0" prefWidth="111.0" text="La Marsa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="279.0" text="Mahdia">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="462.0" prefHeight="27.0" prefWidth="66.0" text="Kelibia">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="63.0" prefHeight="35.0" prefWidth="142.0" text="Dar el Amen">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="240.0" prefHeight="35.0" prefWidth="94.0" text="Wadija">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="415.0" prefHeight="35.0" prefWidth="150.0" text="Charme Pied">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="reserveHotes" layoutX="468.0" layoutY="489.0" mnemonicParsing="false" onAction="#ActionReserveHotes" prefHeight="25.0" prefWidth="142.0" text="Reserver" textFill="#e10b0b">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

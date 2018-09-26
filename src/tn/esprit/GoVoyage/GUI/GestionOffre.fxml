@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.GestionOffreController">
+   <children>
+      <TabPane prefHeight="561.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Ajouter ">
+               <content>
+                  <AnchorPane id="AnchorPane" fx:id="calend2" prefHeight="498.0" prefWidth="751.0" styleClass="mainFxmlClass">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="549.0" fitWidth="778.0" layoutY="-3.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/image.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="dureelabel" layoutX="207.0" layoutY="49.0" prefHeight="36.0" prefWidth="118.0" text="Durée :">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label id="label_spec" layoutX="212.0" layoutY="109.0" prefHeight="36.0" prefWidth="118.0" text="Remise:">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Label>
+                        <Label id="label_dated" layoutX="183.0" layoutY="340.0" prefHeight="36.0" prefWidth="133.0" text="dateDebut :">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label id="label_datef" layoutX="212.0" layoutY="405.0" prefHeight="36.0" prefWidth="121.0" text="dateFin :">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <Label id="label_refClient" fx:id="liste_des_vol" layoutX="36.0" layoutY="255.0" prefHeight="36.0" prefWidth="295.0" text="Liste des (vols/Hotes/Hotels) :">
+                           <font>
+                              <Font size="19.0" />
+                           </font></Label>
+                        <JFXDatePicker fx:id="cal1" defaultColor="#011412" layoutX="294.0" layoutY="331.0" prefHeight="35.0" prefWidth="199.0" />
+                        <JFXDatePicker fx:id="cal2" defaultColor="#011715" layoutX="293.0" layoutY="399.0" prefHeight="35.0" prefWidth="201.0" />
+                        <JFXComboBox fx:id="comboRef" layoutX="290.0" layoutY="255.0" prefHeight="34.0" prefWidth="206.0" />
+                        <JFXButton fx:id="bnt_ajouter" layoutX="282.0" layoutY="461.0" onAction="#on_btnAjouter_click" prefHeight="43.0" prefWidth="172.0" text="Ajouter Offre" textFill="#030000">
+                           <font>
+                              <Font size="19.0" />
+                           </font></JFXButton>
+                        <JFXTextField fx:id="text_spec" layoutX="294.0" layoutY="112.0" prefHeight="31.0" prefWidth="173.0" />
+                        <JFXTextField fx:id="text_duree" layoutX="282.0" layoutY="48.0" prefHeight="31.0" prefWidth="173.0" />
+                        <Label layoutX="146.0" layoutY="177.0" prefHeight="37.0" prefWidth="148.0" text="Promotion pour :">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <JFXComboBox fx:id="typeDoffre" layoutX="294.0" layoutY="180.0" onAction="#selctcombobox" prefHeight="32.0" prefWidth="198.0" />
+                        <Label fx:id="label1" layoutX="492.0" layoutY="52.0" prefHeight="36.0" prefWidth="270.0" textFill="#070000">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label fx:id="label6" layoutX="515.0" layoutY="398.0" prefHeight="36.0" prefWidth="252.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="label5" layoutX="501.0" layoutY="337.0" prefHeight="36.0" prefWidth="266.0" textFill="#140101">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="label4" layoutX="513.0" layoutY="255.0" prefHeight="36.0" prefWidth="256.0" textFill="#110101">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="label3" layoutX="485.0" layoutY="181.0" prefHeight="36.0" prefWidth="285.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font></Label>
+                        <Label fx:id="label2" layoutX="494.0" layoutY="115.0" prefHeight="36.0" prefWidth="278.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label layoutX="455.0" layoutY="116.0" prefHeight="17.0" prefWidth="37.0" text="\%">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="acceuill" layoutX="29.0" layoutY="23.0" onAction="#acceuil" prefHeight="49.0" prefWidth="99.0" text="Acceuil" textFill="#0d0000">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <stylesheets>
+                        <URL value="@ajoutoffregui.css" />
+                     </stylesheets>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#onclick" text="Liste des Offres">
+               <content>
+                  <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="555.0" fitWidth="914.0" layoutX="-1.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/image.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="bntModifier" layoutX="331.0" layoutY="457.0" onAction="#on_btnModifier_click" prefHeight="42.0" prefWidth="132.0" text="Modifier" textFill="#280101">
+                           <font>
+                              <Font size="18.0" />
+                           </font></JFXButton>
+                        <JFXButton fx:id="cancel" layoutX="587.0" layoutY="455.0" onAction="#cancelClick" prefHeight="46.0" prefWidth="109.0" text="Exit" textFill="#220101">
+                           <font>
+                              <Font size="19.0" />
+                           </font></JFXButton>
+                        <JFXButton fx:id="bntSupp" layoutX="463.0" layoutY="457.0" onAction="#on_btnSupp_click" prefHeight="42.0" prefWidth="124.0" text="Supprimer" textFill="#110000">
+                           <font>
+                              <Font size="19.0" />
+                           </font></JFXButton>
+                        <JFXTextField fx:id="FieldCherch" layoutX="551.0" layoutY="14.0" prefHeight="28.0" prefWidth="184.0" promptText="Nom hebergement/num vol" unFocusColor="#0a0000" />
+                        <Label layoutX="364.0" layoutY="14.0" prefHeight="36.0" prefWidth="198.0" text="Chercher Offre par :">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <JFXButton fx:id="acceuill1" layoutX="58.0" layoutY="4.0" onAction="#acceuil" prefHeight="49.0" prefWidth="99.0" text="Acceuil" textFill="#0d0000">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <TableView fx:id="tableview" layoutX="15.0" layoutY="55.0" prefHeight="380.0" prefWidth="757.0" AnchorPane.rightAnchor="7.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#onclick" text="Notification">
+               <content>
+                  <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="image1" fitHeight="549.0" fitWidth="783.0" layoutY="-16.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/image.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="envoyermail" layoutX="373.0" layoutY="378.0" onAction="#enoyerMailClick" prefHeight="44.0" prefWidth="153.0" text="Envoyer Mail" textFill="#030000">
+                           <font>
+                              <Font size="20.0" />
+                           </font></JFXButton>
+                        <JFXTextField fx:id="sujet" layoutX="200.0" layoutY="87.0" prefHeight="28.0" prefWidth="184.0" />
+                        <Label layoutX="130.0" layoutY="81.0" prefHeight="41.0" prefWidth="68.0" text="Sujet :" textFill="#030000">
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font></Label>
+                        <Label layoutX="133.0" layoutY="142.0" prefHeight="31.0" prefWidth="62.0" text="Objet :" textFill="#030000" />
+                        <JFXTextArea fx:id="objet" layoutX="198.0" layoutY="142.0" prefHeight="191.0" prefWidth="464.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

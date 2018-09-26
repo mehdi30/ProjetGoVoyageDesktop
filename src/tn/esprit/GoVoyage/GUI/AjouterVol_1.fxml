@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.AjouterVolController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutY="3.0" orientation="VERTICAL" prefHeight="638.0" prefWidth="1133.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="333.0" prefWidth="991.0">
+               <children>
+                  <ImageView fitHeight="315.0" fitWidth="475.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/background.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="272.0" fitWidth="219.0" layoutX="465.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/background3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="315.0" fitWidth="490.0" layoutX="655.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/background.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tableViewVol" layoutY="82.0" onMouseClicked="#selectionAction" prefHeight="249.0" prefWidth="1128.0">
+                    <columns>
+                      <TableColumn fx:id="villeDepart" prefWidth="75.0" text="Ville Départ" />
+                      <TableColumn fx:id="villeArrivee" prefWidth="75.0" text="Ville Arivée" />
+                        <TableColumn fx:id="dateDepart" prefWidth="75.0" text="Date départ" />
+                        <TableColumn fx:id="dateArrivee" prefWidth="75.0" text="Date Arrivée" />
+                        <TableColumn fx:id="numeroVol" prefWidth="75.0" text="Numéro Vol" />
+                        <TableColumn fx:id="heureD" prefWidth="75.0" text="Horaire" />
+                        <TableColumn fx:id="placesEco" prefWidth="75.0" text="Places Eco" />
+                        <TableColumn fx:id="Cie" prefWidth="75.0" text="Cie aérienne" />
+                        <TableColumn fx:id="dateDR" prefWidth="75.0" text="Date DépartR" />
+                        <TableColumn fx:id="HeureR" prefWidth="75.0" text="Horaire Retour" />
+                        <TableColumn fx:id="DateArriveeR" prefWidth="75.0" text="Date Arrivée R" />
+                        <TableColumn fx:id="DureeVol" prefWidth="75.0" text="Duree" />
+                        <TableColumn fx:id="Tariif" prefWidth="75.0" text="Tarif" />
+                        <TableColumn fx:id="placesAffaire" prefWidth="75.0" text="Places Affaire" />
+                        <TableColumn fx:id="TAvion" prefWidth="75.0" text="Type Avion" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="RechercheText" layoutY="55.0" onKeyReleased="#Rechercheintanta" prefHeight="31.0" prefWidth="206.0" promptText="          Chercher par N° de Vol" />
+                  <Text layoutX="850.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace Gestion Des Vols" textAlignment="CENTER" wrappingWidth="266.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="473.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/Logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="returnmenu" layoutX="24.0" layoutY="3.0" onAction="#ReturnMenu" prefHeight="49.0" prefWidth="99.0" text="Acceuil" textFill="#0d0000">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="1131.0">
+               <children>
+                  <ImageView fitHeight="331.0" fitWidth="509.0" layoutY="-7.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/background.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="315.0" fitWidth="169.0" layoutX="498.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/backgroun.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="325.0" fitWidth="501.0" layoutX="656.0" layoutY="-4.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/background.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ad" layoutX="490.0" layoutY="259.0" text="Heure DépartR :" />
+                  <TextField fx:id="VilleDText" layoutX="328.0" layoutY="82.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="502.0" layoutY="86.0" text="Ville Départ :" />
+                  <TextField fx:id="VilleAText" layoutX="585.0" layoutY="82.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="245.0" layoutY="86.0" text="Ville Arrivée :" />
+                  <TextField fx:id="DateDText" layoutX="96.0" layoutY="82.0" prefHeight="25.0" prefWidth="124.0" promptText="YYYY-MM-DD" />
+                  <Label layoutX="13.0" layoutY="86.0" text="Date Départ :" />
+                  <TextField fx:id="DateAText" layoutX="96.0" layoutY="124.0" prefHeight="25.0" prefWidth="124.0" promptText="YYYY-MM-DD" />
+                  <Label layoutX="12.0" layoutY="128.0" text="Date Arrivee :" />
+                  <TextField fx:id="HDText" layoutX="328.0" layoutY="124.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="236.0" layoutY="128.0" text="Heure Départ :" />
+                  <TextField fx:id="NumvolText" layoutX="96.0" layoutY="167.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="12.0" layoutY="171.0" text="Numéro Vol :" />
+                  <TextField fx:id="TAvionText" layoutX="328.0" layoutY="213.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="238.0" layoutY="217.0" text="Type d'avion :" />
+                  <TextField fx:id="DureeText" layoutX="585.0" layoutY="124.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="526.0" layoutY="128.0" text="Durée :" />
+                  <TextField fx:id="PEcoText" layoutX="585.0" layoutY="167.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="502.0" layoutY="171.0" text="Places eco :" />
+                  <TextField fx:id="CieAText" layoutX="328.0" layoutY="167.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="240.0" layoutY="171.0" text="cie aérienne :" />
+                  <TextField fx:id="DARetourText" layoutX="328.0" layoutY="255.0" prefHeight="25.0" prefWidth="124.0" promptText="YYYY-MM-DD" />
+                  <Label fx:id="bc" layoutX="235.0" layoutY="259.0" text="Date ArriveeR :" />
+                  <TextField fx:id="PaffaireText" layoutX="585.0" layoutY="213.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="494.0" layoutY="217.0" text="Places Affaire :" />
+                  <ComboBox fx:id="TVolText" layoutX="96.0" layoutY="39.0" onAction="#ComboBoxTypeVol" prefHeight="25.0" prefWidth="124.0" />
+                  <TextField fx:id="DDRetourText" layoutX="96.0" layoutY="255.0" prefHeight="25.0" prefWidth="124.0" promptText="YYYY-MM-DD" />
+                  <Label fx:id="ab" layoutX="3.0" layoutY="259.0" prefHeight="17.0" prefWidth="88.0" text="Date DepartR :" />
+                  <TextField fx:id="TarifText" layoutX="96.0" layoutY="213.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="43.0" layoutY="217.0" prefHeight="17.0" prefWidth="45.0" text="Tarif :" />
+                  <TextField fx:id="HDRetourText" layoutX="585.0" layoutY="255.0" prefHeight="25.0" prefWidth="124.0" />
+                  <Label layoutX="31.0" layoutY="43.0" text="Type Vol :" />
+                  <Button layoutX="839.0" layoutY="24.0" mnemonicParsing="false" onAction="#BtnAjouterVol" prefHeight="38.0" prefWidth="145.0" text="Ajouter" />
+                  <Button fx:id="modifierVol" layoutX="839.0" layoutY="152.0" mnemonicParsing="false" onAction="#BtnModifierVol" prefHeight="38.0" prefWidth="145.0" text="Modifier" />
+                  <Button fx:id="supprimerVol" layoutX="839.0" layoutY="88.0" mnemonicParsing="false" onAction="#BtnSupprimer" prefHeight="38.0" prefWidth="145.0" text="Supprimer" />
+                  <Label fx:id="labelo" layoutX="265.0" layoutY="16.0" prefHeight="46.0" prefWidth="523.0" textAlignment="CENTER" textFill="#ff0000fc">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Button layoutX="836.0" layoutY="219.0" mnemonicParsing="false" onAction="#ConsulterStats" prefHeight="38.0" prefWidth="152.0" text="Consulter les Statistiques" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

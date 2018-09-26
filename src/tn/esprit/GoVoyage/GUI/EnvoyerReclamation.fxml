@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.EnvoyerReclamationController">
+   <children>
+      <Text fx:id="iduser" layoutX="464.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextArea fx:id="reclamationtext" layoutX="107.0" layoutY="156.0" opacity="0.8" prefHeight="149.0" prefWidth="387.0" promptText="J'écris ma réclamation ici ..." style="-fx-background-color: black;" />
+      <TextField fx:id="username" layoutX="140.0" layoutY="101.0" opacity="0.3" promptText="Username">
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <ImageView fitHeight="51.0" fitWidth="48.0" layoutX="83.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/avatar.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="513.0" layoutY="274.0" mnemonicParsing="false" onAction="#envoyer" opacity="0.3" text="Envoyer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="34.0" layoutY="345.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/keyboard-right-arrow-button.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="25.0" layoutY="355.0" mnemonicParsing="false" onAction="#retour" opacity="0.0" prefHeight="29.0" prefWidth="67.0" text="Retour">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

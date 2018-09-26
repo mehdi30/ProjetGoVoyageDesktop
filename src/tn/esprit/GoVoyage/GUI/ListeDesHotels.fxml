@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="730.0" style="-fx-background-color: #191970;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.GoVoyage.GUI.ListeDesHotelsController">
+    <stylesheets>
+        <URL value="@listedeshotels.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="TableDesHotels" layoutX="80.0" layoutY="179.0" prefHeight="236.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="tableNom" prefWidth="103.0" text="Nom" />
+          <TableColumn fx:id="tableEtoile" prefWidth="47.0" text="Etoiles" />
+            <TableColumn fx:id="tablePs" prefWidth="71.0" text="PrixSingle" />
+            <TableColumn fx:id="tablePd" prefWidth="76.0" text="PrixDouble" />
+            <TableColumn fx:id="tablePE" prefWidth="66.0" text="PrixEnfant" />
+            <TableColumn fx:id="tableNumTel" prefWidth="116.0" text="NumeroTelephone" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="comboHotels" layoutX="343.0" layoutY="69.0" onAction="#comboHotelAction" prefHeight="48.0" prefWidth="301.0" promptText="Ou shouhaitez vous aller" />
+      <Label layoutX="48.0" layoutY="57.0" prefHeight="71.0" prefWidth="308.0" text="Votre destination :" textFill="#f2f2f2">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="reserver_btn" layoutX="462.0" layoutY="495.0" mnemonicParsing="false" onAction="#reserverAction" prefHeight="56.0" prefWidth="228.0" text="Reserver">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="retour_btn" layoutX="48.0" layoutY="495.0" mnemonicParsing="false" onAction="#retour_btnAction" prefHeight="25.0" prefWidth="119.0" text="retour">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
